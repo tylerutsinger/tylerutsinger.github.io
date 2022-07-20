@@ -62,27 +62,27 @@
 									</header>
 									<p>Using Microsoft Azure free trial I created a virtual machine with the firewall off making it able to be pinged from any country. I also created a network security group within Azure to open all the ports to make the virtual machine easily discoverable. 
 									</p>
-									<class="image fit> </class> <a href="https://gyazo.com/639dec28f5106a1d6c02dcc9595c5c96"> <img src="https://i.gyazo.com/639dec28f5106a1d6c02dcc9595c5c96.png" width= "1400" height="555" alt="Image from Gyazo" </a>
+									<class="image fit> </class> <a href="https://gyazo.com/639dec28f5106a1d6c02dcc9595c5c96"> <img src="https://i.gyazo.com/639dec28f5106a1d6c02dcc9595c5c96.png" width= "900" height="555" alt="Image from Gyazo" </a>
 									<p> </p>
 									
-									</class> <a href="https://gyazo.com/672e61bbf0cd3f7dda6017ca36a5f897"><img src="https://i.gyazo.com/672e61bbf0cd3f7dda6017ca36a5f897.png" alt="Image from Gyazo" width= "1400" height="555"/></a>
+									</class> <a href="https://gyazo.com/672e61bbf0cd3f7dda6017ca36a5f897"><img src="https://i.gyazo.com/672e61bbf0cd3f7dda6017ca36a5f897.png" alt="Image from Gyazo" width= "900" height="555"/></a>
 									<p> Next I created a log repository in Azure which is called Log Analytics Workspace that ingested logs from the exposed virtual machine. 
 									</p>
 									<a href="https://gyazo.com/cdfd1dac5714afd4c6ee55776ff6e84c"><img src="https://i.gyazo.com/cdfd1dac5714afd4c6ee55776ff6e84c.png" alt="Image from Gyazo" width="545"/></a>
 									<p> Now I will use Log Analytics work space to ingest the windows event logs from the virtual machine and create a custom log that will contain geo graphic information from the powershell script to discover where the attackers are coming from. The SIEM (Azure Sentinel) will connect to the workspace to display the geo data on a map. 
 									</p>
-									<a href="https://gyazo.com/6590628999adef2d886dd597df0c11f2"><img src="https://i.gyazo.com/6590628999adef2d886dd597df0c11f2.png" alt="Image from Gyazo" width= "1400" height="555"/></a>
-									<a href="https://gyazo.com/f3a671a350facf1bd323f4676c89b0da"><img src="https://i.gyazo.com/f3a671a350facf1bd323f4676c89b0da.png" alt="Image from Gyazo" width="1371"/></a>
+									<a href="https://gyazo.com/6590628999adef2d886dd597df0c11f2"><img src="https://i.gyazo.com/6590628999adef2d886dd597df0c11f2.png" alt="Image from Gyazo" width= "900" height="555"/></a>
+									<a href="https://gyazo.com/f3a671a350facf1bd323f4676c89b0da"><img src="https://i.gyazo.com/f3a671a350facf1bd323f4676c89b0da.png" alt="Image from Gyazo" width="900"/></a>
 									<P> Creating custom fields from the raw data we got from the windows security logs and powershell. </P>
-									<a href="https://gyazo.com/6c6e4cc01cad365253e8b824d8237a28"><img src="https://i.gyazo.com/6c6e4cc01cad365253e8b824d8237a28.png" alt="Image from Gyazo" width= "1400" height="555"/></a>
+									<a href="https://gyazo.com/6c6e4cc01cad365253e8b824d8237a28"><img src="https://i.gyazo.com/6c6e4cc01cad365253e8b824d8237a28.png" alt="Image from Gyazo" width= "900" height="555"/></a>
 									<p> Using the custom fields, I created a map in the SIEM to plot the attacks. 
 									</p>
-									<a href="https://gyazo.com/59935f2b8a56c365bf0cfa3a6df84558"><img src="https://i.gyazo.com/59935f2b8a56c365bf0cfa3a6df84558.png" alt="Image from Gyazo" width="1400"/></a>
+									<a href="https://gyazo.com/59935f2b8a56c365bf0cfa3a6df84558"><img src="https://i.gyazo.com/59935f2b8a56c365bf0cfa3a6df84558.png" alt="Image from Gyazo" width="900"/></a>
 									<p>These are live attacks thru failed RDP attempts with the script only running for 10 minutes. 
 									The API used to get the GEO data has a limit of 1000 requests so I was only able to plot the first 1000 attempts. </p>
-									<a href="https://gyazo.com/4b1f638b04d77ba60518668039816dfb"><img src="https://i.gyazo.com/4b1f638b04d77ba60518668039816dfb.png" alt="Image from Gyazo" width="1400"/></a>
+									<a href="https://gyazo.com/4b1f638b04d77ba60518668039816dfb"><img src="https://i.gyazo.com/4b1f638b04d77ba60518668039816dfb.png" alt="Image from Gyazo" width="900"/></a>
 									<h> Final Map</h>
-									<a href="https://gyazo.com/dbfd54f3042be8ffe3d65816770872ec"><img src="https://i.gyazo.com/dbfd54f3042be8ffe3d65816770872ec.png" alt="Image from Gyazo" width="1400"/></a>
+									<a href="https://gyazo.com/dbfd54f3042be8ffe3d65816770872ec"><img src="https://i.gyazo.com/dbfd54f3042be8ffe3d65816770872ec.png" alt="Image from Gyazo" width="900"/></a>
 									<ul class="actions special">
 										<li><a href="https://github.com/tylerutsinger/SIEMmap" class="button">GitHub source code</a></li>
 									</ul>
